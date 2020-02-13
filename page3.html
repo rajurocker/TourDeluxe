@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/swanky-purse/theme.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <title>TourDeluxe.com</title>
+  </head>
+  <body class="bg-secondary" style="font-family: sans-serif;">
+
+  <header class="logoMain bg-light">
+   <div><img src="images/AccommodationLogo.png" class="mainLogo"></div>     
+  </header>
+
+ 
+<a href="page2.html" class="btn btn-warning" id="backTwo">Back</a>
+
+<!--   <button>Sort</button>
+
+  <button>Filter</button> -->
+
+
+ <div class="main">
+
+<!-- The buttons -->
+<div id="myBtnContainer">
+  <button class="btn btn-warning" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn btn-warning" onclick="filterSelection('hotel')"> Hotel</button>
+  <button class="btn btn-warning" onclick="filterSelection('hostel')"> Hostel</button>
+  <button class="btn btn-warning" onclick="filterSelection('motel')"> Motel</button>
+  <button class="btn btn-warning" onclick="filterSelection('house')"> House</button>
+  <a href="googlemap.html" class="btn btn-success">Locations</a>
+</div>
+
+<br>
+
+
+<!-- This shows an image of google map -->
+<!-- <a href="googlemap.html"><img src="images/screenshot2019.jpg" class="screenMap"></a> -->
+
+
+
+
+<!-- This is the first card -->
+  <div class="column hotel">
+    <div class="content">
+      <a href="page4.html"><img src="images/room1bedroom.jpg" alt="Mountains" style="width:100%"></a>
+      <h4>The Post Hotel</h4>
+      <p>3 Serlby Place, Porirua, Wellington, New Zealand, 5022</p>
+      <p>Price: $157.00, from 1 night to 5 nights</p>
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">View Details</button>
+    </div>
+  </div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Post Hotel</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a href="page4.html"><img src="images/room1bedroom.jpg" alt="first room" style="width:100%"></a>
+        <br>
+        <br>
+        <p> Located at 3 Serlby Place, Porirua, Wellington, New Zealand, 5022 </p>
+        <p>price: $157.00, from 1 night to 5 nights</p>
+        <p>Parking Available</p>
+        <p>Private bathroom, a hair dryer, and a shower</p>
+        <p>Free Wifi</p>
+        <p>Breakfast:</p>
+        <p>Vanilla Waffle Hazelnut Cremeux, Pistachio, Strawberry / with Coconut Ice Cream. Price: $21.00</p>
+        <p>Buffalo Mozzarella Broad Beans & Peas, Preserved Lemon, Grilled Sourdough. Price: $23.00</p>
+        <p>Granola Cashew & Macadamia, Berries, Coconut Yoghurt. Price: $19.00</p>
+        <p>Lunch:</p>
+        <p>Mee Goreng V
+          Meat: Chicken $18.00 or Seafood $20.00
+          Pan fried egg noodles cooked with egg, onions and bean sprouts. Price: $20.00
+        </p>
+        <p>Banchow
+          Rice Pancake Filled with mince chicken, seafood, bean sprouts, onions and coconut.Served with peanut dipping sauce. Price: $20.00</p>
+        <p>Crispy Baby Crab
+          Battered crab topped with hot curry sauce, coriander salad and coconut cream. Price: $20.00</p>
+        <p>Dinner:</p>
+        <p>Carpaccio of white fish cured in granny smith apples with shaved cucumber and a white soy
+          & lime dressing. Price: $18.00</p>
+        <p>Pappardelle pasta with shaved courgette, mint, smoked feta, sauce vierge and oven dried
+          tomatoes. Price: $29.00</p>
+        <p>Smoked & marinated lamb back strap with earth cooked carrots, whipped potato, hazelnuts & roasted garlic vinaigrette. Price: $29.00</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="checkoutpage.html"  class="btn btn-warning">Reserve</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- This is the first card -->
+
+
+
+<!-- This is the Second card -->
+  <div class="column hotel">
+    <div class="content">
+    <img src="images/room2bedroom.jpg" alt="second room" style="width:100%">
+      <h4>The Cambridge Hotel</h4>
+      <p>28 Cambridge Terrace, Wellington, New Zealand</p>
+      <p>Price: $157.00, from 1 night to 5 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+<!-- This is the Second card -->
+
+
+
+<!-- This is the Third card -->
+  <div class="column hotel">
+    <div class="content">
+    <img src="images/room3bedroom.jpg" alt="third room" style="width:100%">
+      <h4>Sofitel Wellington</h4>
+      <p>11 Bolton Street, Wellington, New Zealand</p>
+      <p>Price: $157.00, from 1 night to 5 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+<!-- This is the Third card -->  
+
+
+
+<!-- This is the hostel card one -->
+  <div class="column hostel">
+    <div class="content">
+    <img src="images/hostel1.jpg" alt="first hostel" style="width:100%">
+      <h4>Hotel Waterloo & Backpackers</h4>
+      <p>1 Bunny Street, 6011 Wellington, New Zealand</p>
+      <p>Price: $30.00, from 1 night to 10 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+<!-- This is the hostel card one -->
+
+
+
+<!-- This is the hostel card two -->
+  <div class="column hostel">
+    <div class="content">
+    <img src="images/hostel2.jpg" alt="second hostel" style="width:100%">
+      <h4>Rise Hostel</h4>
+      <p>237 Willis Street, 6011 Wellington, New Zealand.</p>
+      <p>Price: $30.00, from 1 night to 10 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+<!-- This is the hostel card two -->
+
+
+
+<!-- This is the hostel card three -->
+  <div class="column hostel">
+    <div class="content">
+    <img src="images/hostel3.jpg" alt="third hostel" style="width:100%">
+      <h4>Wild Zebra Backpackers</h4>
+      <p>58 Tory Street, 6011 Wellington, New Zealand.</p>
+      <p>Price: $30.00, from 1 night to 10 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+  <!-- This is the hostel card three -->
+
+
+
+  <!-- This is the motel card one -->
+  <div class="column motel">
+    <div class="content">
+      <img src="images/motel1.jpg" alt="motel 1" style="width:100%">
+      <h4>Halswell Lodge</h4>
+      <p>21 Kent Terrace, 5016 Wellington, New Zealand</p>
+      <p>Price: $90.00, from 3 night to 10 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+  <!-- This is the motel card one -->
+
+
+
+  <!-- This is the motel card two -->
+  <div class="column motel">
+    <div class="content">
+    <img src="images/motel2.jpg" alt="motel 2" style="width:100%">
+      <h4>Newlands Court Motel</h4>
+      <p>96 Newland road, Newlands, 6037 Wellington, New Zealand</p>
+      <p>Price: $90.00, from 3 night to 10 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+  <!-- This is the motel card two -->
+
+
+
+  <!-- This is the motel card three -->
+  <div class="column motel">
+    <div class="content">
+    <img src="images/motel3.jpg" alt="motel 3" style="width:100%">
+      <h4>Foreshore Motor Lodge</h4>
+      <p>Foreshore Motor Lodge 5 Nelson Street,Petone, 5012 Petone, New Zealand</p>
+      <p>Price: $90.00, from 3 night to 10 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+  <!-- This is the motel card three -->
+
+
+
+  <div class="column house">
+    <div class="content">
+      <img src="images/house1.jpg" alt="house one" style="width:100%">
+      <h4>U Residence Hotel</h4>
+      <p>181 Wakefield Street, 6011 Wellington, New Zealand</p>
+      <p>Price: $240, from 2 nights to 15 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+
+
+
+  <div class="column house">
+    <div class="content">
+    <img src="images/house2.jpg" alt="house two" style="width:100%">
+      <h4>West Plaza Hotel</h4>
+      <p>110 Wakefield Street, 6011 Wellington, New Zealand</p>
+      <p>Price: $240, from 2 nights to 15 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+
+
+
+  <div class="column house">
+    <div class="content">
+    <img src="images/house3.jpg" alt="house three" style="width:100%">
+      <h4>James Cook Hotel Grand Chancellor</h4>
+      <p>147 The Terrace, 6011 Wellington, New Zealand</p>
+      <p>Price: $240, from 2 nights to 15 nights</p>
+      <button type="button" class="btn btn-warning">View Details</button>
+    </div>
+  </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    <script src="js/jquery.js"></script>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI_F3seo_Z9wct_DaKIFa6a3-kwcFSatk&callback=initMap"
+    async defer></script> -->
+  </body>
+</html>
